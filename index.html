@@ -4,61 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso Importante</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+    <title>Informações Clube do Livro</title>
+    <link rel="stylesheet" href="style.css">
 
-        .container {
-            background: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        .container h1 {
-            color: red;
-        }
 
-        .links a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: white;
-        }
-
-        .link1 {
-            background-color: blue;
-        }
-
-        .link2 {
-            background-color: green;
-        }
-
-        .link3 {
-            background-color: orange;
-        }
-    </style>
 </head>
+
 
 <body>
     <div class="container">
-        <h1>Aviso Importante</h1>
-        <p>Esta página contém informações importantes. Confira os links abaixo:</p>
+        <!-- Logo e imagens -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <img src="img/biblia.png" alt="Biblia">
+        </div>
+
+        <!-- Título -->
+        <div class="title">Informações Sobre o Clube do Livro</div>
+
+        <!-- Texto -->
+        <div class="text">Encontros ao vivo dia xx/xx/xxxx horas xx:xx</div>
+
+        <!-- Links -->
         <div class="links">
-            <a class="link1" href="https://exemplo.com" target="_blank">Acesse o site oficial</a>
-            <a class="link2" href="https://suporte.com" target="_blank">Suporte</a>
-            <a class="link3" href="https://ajuda.com" target="_blank">Central de Ajuda</a>
+            <a href="#" class="link live">
+                <span class="icon">⚪</span>Ao vivo
+            </a>
+        <a href="https://wa.me/seunumero" class="link whatsapp">
+            <img src="img/zap.png" alt="WhatsApp" style="width: 24px; height: 24px; margin-right: 8px;">
+            Grupo WhatsApp
+        </a>
+
+            <a href="#" class="link tips">
+                <span class="icon">💡</span>Dicas
+            </a>
+            <a href="#" class="link important">
+                <span class="icon">📜</span>Recados Importantes
+            </a>
         </div>
     </div>
 </body>
