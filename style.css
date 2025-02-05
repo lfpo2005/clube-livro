@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #e2e2e2, #a3a3a3);
+    background: linear-gradient(to bottom, #353131, #555353);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,15 +33,16 @@ body {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     color: black;
     margin-bottom: 20px;
 }
 
 .text {
-    color: gray;
+    color: rgb(3, 3, 3);
     margin-bottom: 20px;
+    font-size: 1.5rem;;
 }
 
 .links {
@@ -58,6 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
 .live {
@@ -73,7 +75,7 @@ body {
 }
 
 .important {
-    background: gray;
+    background: blue;
 }
 
 .icon {

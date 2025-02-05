@@ -7,6 +7,7 @@
     <title>Informações Clube do Livro</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="icon" type="imagen/png" href="img/icon _clube_livro (2).png"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 
@@ -18,7 +19,6 @@
         <!-- Logo e imagens -->
         <div class="logo">
             <img src="img/logo.png" alt="Logo">
-            <!-- <img src="img/biblia.png" alt="Biblia"> -->
             <img src="img/ClubeLivro.png" alt="logo do clube do livro">
         </div>
 
@@ -26,27 +26,50 @@
         <div class="title">Informações Sobre o Clube do Livro</div>
 
         <!-- Texto -->
-        <!-- <div class="text">Encontros ao vivo dia xx/xx/xxxx horas xx:xx</div> -->
-        <div class="text">Nosso primeiro encontro será dia <strong> 04/02/2025 </strong> horas <strong>19:30 </strong> Local: <strong>Igreja Cristo Reina</strong></div>
+        <div class="text">Encontros ao vivo as terças feiras<br> Horas: <strong>19:30 </strong> Local: <strong>No link abaixo</strong></div>
 
         <!-- Links -->
         <div class="links">
             <a href="#" class="link live">
-                <span class="icon">⚪</span>Ao vivo
+                <span class="icon">⚪</span><strong>Ao vivo</strong>
             </a>
         <a href="https://chat.whatsapp.com/HtGMSnD0tVs3sZ4Rh8fxUd" class="link whatsapp">
             <img src="img/zap.png" alt="WhatsApp" style="width: 24px; height: 24px; margin-right: 8px;">
-            Grupo WhatsApp
+            <strong>Grupo WhatsApp</strong>
         </a>
 
-            <a href="/dicas" class="link tips">
+            <!-- <a href="/dicas" class="link tips">
                 <span class="icon">💡</span>Dicas
-            </a>
-            <a href="https://rainy-gatsby-e8f.notion.site/Clube-do-Livro-19040ab053af805c85bdc15f5d3b99c7" class="link important">
-                <span class="icon">📜</span>Estudos
+            </a> -->
+            <a href="https://www.notion.so/Clube-do-Livro-19040ab053af805c85bdc15f5d3b99c7" class="link important">
+                <span class="icon">📜</span><strong>Estudos</strong>
             </a>
         </div>
-    </div>    
+    </div> 
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".link");
+
+            links.forEach(link => {
+                link.addEventListener("mousedown", function () {
+                    this.style.transform = "scale(0.95)"; 
+                    this.style.opacity = "0.8"; 
+                });
+
+                link.addEventListener("mouseup", function () {
+                    this.style.transform = "scale(1)"; 
+                    this.style.opacity = "1"; 
+                });
+
+                link.addEventListener("mouseleave", function () {
+                    this.style.transform = "scale(1)"; 
+                    this.style.opacity = "1";
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
