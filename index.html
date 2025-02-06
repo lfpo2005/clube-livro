@@ -25,51 +25,33 @@
         <!-- Título -->
         <div class="title">Informações Sobre o Clube do Livro</div>
 
+        <!-- Livro atual -->
+        <div class="current-book">
+            <h2>📖 Livro do Momento</h2>
+            <p id="titulo-livro"><strong>Título:</strong> Carregando...</p>
+            <p id="tema-livro"><strong>Tema:</strong> Carregando...</p>
+        </div>
+
         <!-- Texto -->
         <div class="text">Encontros ao vivo as terças feiras<br> Horário: <strong>19:30 </strong> Local: <strong>No link abaixo</strong></div>
 
         <!-- Links -->
         <div class="links">
-            <a href="#" class="link live">
+            <a id="link-aula" href="#" target="_blank" class="link live">
                 <span class="icon">⚪</span><strong>Ao vivo</strong>
             </a>
         <a href="https://chat.whatsapp.com/HtGMSnD0tVs3sZ4Rh8fxUd" class="link whatsapp">
             <img src="img/zap.png" alt="WhatsApp" style="width: 24px; height: 24px; margin-right: 8px;">
             <strong>Grupo WhatsApp</strong>
         </a>
-
-            <!-- <a href="/dicas" class="link tips">
-                <span class="icon">💡</span>Dicas
-            </a> -->
-            <a href="https://www.notion.so/Clube-do-Livro-19040ab053af805c85bdc15f5d3b99c7" class="link important">
-                <span class="icon">📜</span><strong>Estudos</strong>
-            </a>
+        <a id="estudo-atual" href="#" target="_blank" class="link studies">
+            <span class="icon">📜</span><strong>Estudos</strong>
+        </a>
         </div>
     </div> 
     
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const links = document.querySelectorAll(".link");
 
-            links.forEach(link => {
-                link.addEventListener("mousedown", function () {
-                    this.style.transform = "scale(0.95)"; 
-                    this.style.opacity = "0.8"; 
-                });
-
-                link.addEventListener("mouseup", function () {
-                    this.style.transform = "scale(1)"; 
-                    this.style.opacity = "1"; 
-                });
-
-                link.addEventListener("mouseleave", function () {
-                    this.style.transform = "scale(1)"; 
-                    this.style.opacity = "1";
-                });
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
